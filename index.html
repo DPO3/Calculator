@@ -12,12 +12,12 @@
     <form class="calculator" name="calculator">
         <input type="text" class="value" name="txt" readonly>
         <span class="number clear" onclick="document.calculator.txt.value = ''">C</span>
-        <span class="number" onclick="document.calculator.txt.value += '/'">/</span>
-        <span class="number" onclick="document.calculator.txt.value += '*'">*</span>
+        <span class="number divide" onclick="document.calculator.txt.value += '/'">/</span>
+        <span class="number multiply" onclick="document.calculator.txt.value += '*'">*</span>
         <span class="number" onclick="document.calculator.txt.value += '7'">7</span>
         <span class="number" onclick="document.calculator.txt.value += '8'">8</span>
         <span class="number" onclick="document.calculator.txt.value += '9'">9</span>
-        <span class="number" onclick="document.calculator.txt.value += '-'">-</span>
+        <span class="number minus" onclick="document.calculator.txt.value += '-'">-</span>
         <span class="number" onclick="document.calculator.txt.value += '4'">4</span>
         <span class="number" onclick="document.calculator.txt.value += '5'">5</span>
         <span class="number" onclick="document.calculator.txt.value += '6'">6</span>
@@ -27,7 +27,7 @@
         <span class="number" onclick="document.calculator.txt.value += '3'">3</span>
         <span class="number" onclick="document.calculator.txt.value += '0'">0</span>
         <span class="number" onclick="document.calculator.txt.value += '00'">00</span>
-        <span class="number" onclick="document.calculator.txt.value += '.'">.</span>
+        <span class="number point" onclick="document.calculator.txt.value += '.'">.</span>
         <span class="number equal" onclick="document.calculator.txt.value = eval(calculator.txt.value)">=</span>
 </body>
 </html>
