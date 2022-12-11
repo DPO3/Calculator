@@ -10,32 +10,35 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: grey;
+    background-color: rgb(1, 0, 10);
 }
 
 .calculator{
-    position: relative;
-    display: grid;
+   position: relative;
+   display: grid;
+   border: 2.475px aliceblue solid;
+   border-radius: 1%;    
 }
 
 .value{
     border: none;
     outline: none;
-    background-color: rgb(255, 0, 251);
+    background-color: rgb(128, 128, 128);
     height: 100px;
     font-size: 18px;
     text-align: right;
     padding: 10px;
     grid-column: span 4;
     user-select: none;
+    align-content: calc();
 }
 
 .number{
     width: 60px;
     height: 60px;
-    background-color: mediumspringgreen;
-    color: navy;
-    border: 1px solid rgb(225, 19, 0);
+    background-color: rgb(0, 2, 24);
+    color: aliceblue;
+    border: 1px solid rgb(0, 0, 0);
     display: grid;
     place-items: center ;
     user-select: none;
@@ -46,13 +49,13 @@ transform: scale(0.8);
 }
 
 .number:hover{
- background-color:rgb(17, 255, 0) ;
+ background-color:rgb(0, 8, 39) ;
 cursor:pointer ;
 transition: 0.8s;
 }
 
 .clear{
-    background-color: teal;
+    background-color: rgb(11, 11, 41);
     width: 120px;
     grid-column: span 2;
 }
@@ -60,8 +63,9 @@ transition: 0.8s;
 .plus{
     height: 120px;
     grid-row: span 2;
+    background-color: rgb(11, 11, 41);
 }
 
 .equal{
-    background-color: teal;
+    background-color: rgb(11, 11, 41);
 }
