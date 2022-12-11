@@ -12,12 +12,13 @@
     <form class="calculator" name="calculator">
         <input type="text" class="value" name="txt" readonly>
         <span class="number clear" onclick="document.calculator.txt.value = ''">C</span>
-        <span class="number" onclick="document.calculator.txt.value += '/'">/</span>
-        <span class="number" onclick="document.calculator.txt.value += '*'">*</span>
+        <span class="number clear" onclick="document.calculator.txt.value = ''">A/C</span>
+        <span class="number delit" onclick="document.calculator.txt.value += '/'">/</span>
+        <span class="number umnoch" onclick="document.calculator.txt.value += '*'">*</span>
         <span class="number" onclick="document.calculator.txt.value += '7'">7</span>
         <span class="number" onclick="document.calculator.txt.value += '8'">8</span>
         <span class="number" onclick="document.calculator.txt.value += '9'">9</span>
-        <span class="number" onclick="document.calculator.txt.value += '-'">-</span>
+        <span class="number minus" onclick="document.calculator.txt.value += '-'">-</span>
         <span class="number" onclick="document.calculator.txt.value += '4'">4</span>
         <span class="number" onclick="document.calculator.txt.value += '5'">5</span>
         <span class="number" onclick="document.calculator.txt.value += '6'">6</span>
